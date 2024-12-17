@@ -3,7 +3,7 @@ import mongoose from "mongoose";
 export const conectionDB = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://anaranja111:anaranja111@cluster0.wlfck.mongodb.net/"
+      "mongodb://localhost:27017/ANA"
     );
     console.log("Conectado a la base de datos");
   } catch (error) {
